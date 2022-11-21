@@ -1,6 +1,7 @@
 const a = [4, 5, 8, 9];
 const b = [3, 4, 5, 7];
 const countries = ["Finland", "Sweden", "Norway"];
+
 let countries2 = [
   ["Finland", "Helsinki"],
   ["Sweden", "Stockholm"],
@@ -16,23 +17,19 @@ for (let i = 0; i <= 10; i++) {
 console.log(set);
 
 // NO 3
-console.log("\n");
 set.delete(1);
 console.log(set);
 
 //NO  4
-console.log("\n");
 set.clear();
 console.log(set);
 
 // NO 5
-console.log("\n");
 let arr = ["she", "he", "goat", "sheep", "ram"];
 let set2 = new Set(arr);
 console.log(set2);
 
 // NO 6
-console.log("\n");
 let map = new Map(countries2);
 console.log(map);
 
@@ -42,20 +39,17 @@ for (const [country, city] of map) {
 
 // EXERCISE 2
 //  N0 1
-console.log("\n");
 let c = [...a, ...b];
 let cSet = new Set(c);
 console.log(cSet);
 
 // NO 2
-console.log("\n");
 let A = new Set(a);
 let B = new Set(b);
 let filter = a.filter((num) => B.has(num));
 console.log(filter);
 
 // NO 3
-console.log("\n");
 let diffFilter = a.filter((num) => !B.has(num));
 console.log(diffFilter);
 
